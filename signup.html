@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up - Study4U</title>
+  </head>
+  <body>
+    <section class="container">
+      <h2 class="title__signup">Sing Up</h2>
+      <p class="subtitle subtitle__signup">It's great having you here!</p>
+      <div class="data data__signup__position">
+        <div class="data__signup">
+          <label for="name" class="data__signup__label">First Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your First Name"
+            class="data__signup__input"
+            required
+          />
+          <label for="lastname" class="data__signup__label">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Enter your Last Name"
+            class="data__signup__input"
+            required
+          />
+          <label for="birth" class="data__signup__label">Date of Birth</label>
+          <input
+            type="date"
+            id="birth"
+            name="birth"
+            value="1950-01-01"
+            class="data__signup__input"
+            required
+          />
+          <label for="email" class="data__signup__label">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your E-mail"
+            class="data__signup__input"
+            required
+          />
+          <label for="password" class="data__signup__label">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            class="data__signup__input"
+            required
+          />
+          <label for="confirmpassword" class="data__signup__label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="confirmpassword"
+            name="confirmpassword"
+            placeholder="Repeat password"
+            class="data__signup__input"
+            required
+          />
+        </div>
+        <div>
+          <button type="submit" class="button__access button__signup">
+            Sign Up
+          </button>
+        </div>
+        <a href="index.html" class="goback">Back to Welcome page</a>
+      </div>
+      <p class="footer">
+        <strong>Study4U: A new way to learn</strong>
+      </p>
+    </section>
+  </body>
+</html>

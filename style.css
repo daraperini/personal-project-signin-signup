@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: rgba(247, 255, 229, 0.4);
+    --background-secondary-color: rgba(160, 196, 157, 0.6) ;
+    --primary-color: rgb(97, 122, 85);
+    --secondary-color: rgb(196, 215, 178) ;
+    --primary-font: 'Mulish', sans-serif;
+}
+
+body {
+    background-image: url(assets/workspace-gd0322aedb_1920.jpg);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.container {
+    height: 800px;
+    width: 700px;
+    margin: 3% 15% 0 15%;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+h1, h2, .subtitle {
+    background-color: var(--background-secondary-color);
+    text-align: center;
+}
+
+h1, h2 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1em 0 1em 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.subtitle {
+    padding-bottom: 1em;
+}
+
+.options, .data {
+    text-align: center;
+    padding: 1em 0;
+    background-color: var(--background-secondary-color);
+    margin: 9% 15%;
+    border-radius: 10px;
+}
+
+.button {
+    margin: 4em;
+}
+
+.button__link {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 1em 2em;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.button__link:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.footer {
+    background-color: var(--background-secondary-color);
+    padding: 1em 0 1.2em 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.data__signin__position {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em 5em;
+}
+
+.data__signin__label {
+    text-align: start;
+}
+
+.data__signin__input, .data__signup__input{
+    font-size: 16px;
+    border: none;
+    padding: 1em 1.7em;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.data__signin__space {
+    margin-bottom: 1.5em;
+}
+
+.button__access {
+    font-size: 18px;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-weight: 400;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--background-color);
+}
+
+.button__signin {
+    margin-top: 0.9em;
+}
+
+.data__signin__input:focus, .data__signup__input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--primary-color);
+    border-right: 1px solid var(--primary-color);
+}
+
+.forgot-password {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-align: start;
+    margin-bottom: 1.5em;
+}
+
+.forgot-password:hover {
+    color: var(--primary-color);
+}
+
+.button__signin, .button__signup {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2.2em;
+}
+
+.button__signup {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.button__signin:hover, .button__signup:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.goback {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.goback:hover {
+    color: var(--primary-color);
+}
+
+.title__signup {
+    padding: 0.5em;
+}
+
+.subtitle__signup {
+    padding-top: 0.5em;
+}
+
+.data__signup__position {
+    margin: 2% 15%;
+}
+
+.data__signup {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: start;
+    align-items: center;
+    padding: 0.5em;
+    gap: 1em;
+}
+
+.data__signup__label {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 90%;
+        height: 90%;
+        margin: 1em;
+    }
+
+    h1 {
+        padding: 0.3em;
+    }
+
+    .subtitle {
+        padding: 1em;
+    }
+
+    .title__signin {
+        padding-bottom: 0.3em;
+    }
+
+    .options {
+        padding: 1em;
+    }
+
+    .button {
+        margin: 25% 5%;
+    }
+
+    .button__link {
+        font-size: 16px;
+        padding: 2em;
+    }
+
+    .button__link:active {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+    .footer {
+        font-size: 16px;
+    }
+
+    .data__signin__position {
+        padding: 1em 0.5em;
+    }
+
+    .data__signin__input {
+        font-size: 16px;
+        padding: 1em 0.5em;
+    }
+
+    .forgot-password {
+        font-size: 12px;
+        padding: 1em 0;
+    }
+
+    .forgot-password:active {
+        color: var(--primary-color);
+    }
+
+    .button__signin {
+        margin: 1em 0 2em 0;
+    }
+
+    .button__signin:active, .button__signup:active {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .goback {
+        font-size: 14px;
+    }
+
+    .goback:active {
+        color: var(--primary-color);
+    }
+
+    .data__signup {
+        grid-template-columns: 1fr;
+    }
+
+    .data__signup__input {
+        padding: 1em 0.7em;
+    }
+}
